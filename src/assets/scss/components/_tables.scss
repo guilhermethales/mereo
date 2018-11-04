@@ -1,4 +1,9 @@
 .table-default {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
   &__answer {
     position: relative;
     &:last-of-type::after {

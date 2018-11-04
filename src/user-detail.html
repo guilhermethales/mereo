@@ -1,0 +1,106 @@
+{% set title = 'Detalhe Usuário' %}
+{% extends "partials/layout.html" %}
+
+{% block content %}
+  <div class="content-default">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <section class="user-detail mb-3">
+          <div class="card user-detail__card">
+            <div class="user-detail__card__header">
+              <div class="avatar avatar--big avatar--border">
+                <img src="../assets/img/user.png" class="avatar__image" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="user-detail__infos">
+                <h1 class="user-detail__infos__name">Guilherme Thales Virgílio Simões</h1>
+                <p class="user-detail__infos__occupation">Desenvolvedor Front-end</p>
+                <p class="user-detail__infos__companyTime">Tempo de Empresa: 2 anos</p>
+                <p>
+                <img class="user-detail__infos__icon" src="assets/img/icons/icon-mail.svg" alt="">
+                guilhermethales97@gmail.com</p>
+                <p>
+                <img class="user-detail__infos__icon" src="assets/img/icons/icon-phone.svg" alt="">
+                (31) 99425-8494</p>
+                <a class="user-detail__infos__link link-default" target="_blank" href="https://www.linkedin.com/in/guilherme-thales-virg%C3%ADllio-7ba642130/">
+                <img class="user-detail__infos__icon" src="assets/img/icons/icon-linkedin.svg" alt="">
+                https://www.linkedin.com/in/guilherme-thales-virg%C3%ADllio-7ba642130/</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="professional-experience mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card__title">Experiência Profissional</h2>
+              <div class="card-default__item">
+                <div class="card-default__company">
+                  <img class="card-default__company__image" src="assets/img/company1.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Alpes One Tecnologia</h3>
+                  <p class="user-detail__infos__companyTime mb-0">mar de 2018 - até o momento (9 meses)</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__company">
+                  <img class="card-default__company__image" src="assets/img/company3.jpg" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Overside Tecnologia</h3>
+                  <p class="user-detail__infos__companyTime mb-0">fev de 2015 - fev de 2018</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__company">
+                  <img class="card-default__company__image" src="assets/img/company2.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">HC-COOP</h3>
+                  <p class="user-detail__infos__companyTime mb-0">mai de 2013 - jan de 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="certifications">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card__title">Certificados</h2>
+              <div class="card-default__item">
+                <div class="card-default__company">
+                  <img class="card-default__company__image" src="assets/img/logo-company-certification.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">JS com TDD na Prática</h3>
+                  <p class="user-detail__infos__companyTime mb-0">mar de 2017 - abril de 2017</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__company">
+                  <img class="card-default__company__image" src="assets/img/logo-company-certification.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Javascript completo 2018. Do iniciante ao mestre</h3>
+                  <p class="user-detail__infos__companyTime mb-0">jan de 2017 - fev de 2017</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__company">
+                  <img class="card-default__company__image" src="assets/img/logo-alura.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Flexbox: Posicione elementos na tela</h3>
+                  <p class="user-detail__infos__companyTime mb-0">out de 2016 - nov de 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+{% endblock %}

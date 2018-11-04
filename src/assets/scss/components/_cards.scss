@@ -1,0 +1,107 @@
+.user-detail {
+  &__card {
+    display: block;
+
+    &__header {
+      position: relative;
+      min-height: 75px;
+      @include media-breakpoint-up(lg) {
+        min-height: 150px;
+      }
+      background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    }
+  }
+
+  &__infos {
+    &__title {
+      @extend .font-bold;
+    }
+
+    &__name {
+      font-size: 16px;
+      @include media-breakpoint-up(lg) {
+        font-size: 28px;
+      }
+    }
+
+    &__occupation {
+      font-size: 16px;
+      color: #787676;
+      margin-bottom: 10px;
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+      }
+    }
+
+    &__icon {
+      width: 25px;
+      margin-right: 5px;
+    }
+  }
+
+  .card-body {
+    padding-top: 40px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 80px;
+    }
+  }
+
+  .avatar {
+    position: absolute;
+    bottom: -25px;
+    left: 15px;
+
+    @include media-breakpoint-up(lg) {
+      bottom: -70px;
+      left: 15px;
+    }
+  }
+}
+
+.card {
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    @extend .font-bold;
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card-default {
+  position: relative;
+  &__item {
+    display: flex;
+    padding: 30px 0;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #e3e3e3;
+    }
+    &:first-of-type {
+      padding-top: 10px;
+    }
+  }
+  &__company {
+    &__image {
+      max-width: 50px;
+    }
+  }
+
+  &__texts {
+    padding-left: 20px;
+  }
+
+  &__title {
+    @media(max-width: 320px) {
+      font-size: 15px;
+    }
+    font-size: 18px;
+    margin-bottom: 5px;
+    @extend .font-bold;
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
+  }
+}
