@@ -1,0 +1,27 @@
+.header {
+  min-height: 50px;
+  background-color: #222d32;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+
+  &__logo {
+    max-width: 100px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 140px;
+    }
+  }
+
+  &__user {
+    color: $white;
+    display: flex;
+    cursor: pointer;
+
+    &__text {
+      margin-left: 10px;
+    }
+  }
+}

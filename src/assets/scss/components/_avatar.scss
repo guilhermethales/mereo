@@ -1,0 +1,14 @@
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  &--small {
+    width: 30px;
+    height: 30px;
+  }
+  &__image {
+    width: 100%;
+    display: block;
+  }
+}
