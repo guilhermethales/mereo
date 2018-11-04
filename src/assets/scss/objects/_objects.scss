@@ -27,6 +27,13 @@
   }
 }
 
+.text-default {
+  font-size: 14px;
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+  }
+}
+
 .main-backdrop {
   top: 0;
   left: 0;
@@ -51,5 +58,13 @@
   margin-top: 50px;
   @include media-breakpoint-up(lg) {
     margin-left: 270px;
+  }
+}
+
+.table-default {
+  background-color: $white;
+
+  thead th {
+    border-width: 1px;
   }
 }

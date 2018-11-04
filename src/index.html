@@ -2,5 +2,46 @@
 {% extends "partials/layout.html" %}
 
 {% block content %}
-  <h1>Teste</h1>
+  <table class="table table-default table-users">
+  <thead>
+    <tr>
+      <th class="text-default" scope="col">Usuários</th>
+      <th class="text-default" scope="col">Nome</th>
+      <th class="text-default" scope="col">Cargo</th>
+      <th class="text-default" scope="col">Data de Cadastro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-users__user">
+      <th scope="row">
+        <div class="avatar ">
+          <img src="../assets/img/user.png" class="avatar__image" />
+        </div>
+      </th>
+      <td class="text-default table-default__answer">Mark</td>
+      <td class="text-default table-default__answer">Gerente de TI</td>
+      <td class="text-default table-default__answer">11/10/2018</td>
+    </tr>
+    <tr class="table-users__user">
+      <th scope="row">
+        <div class="avatar ">
+          <img src="../assets/img/user.png" class="avatar__image" />
+        </div>
+      </th>
+      <td class="text-default table-default__answer">Jacob</td>
+      <td class="text-default table-default__answer">Desenvolvedor Back-end</td>
+      <td class="text-default table-default__answer">11/10/201</td>
+    </tr>
+    <tr class="table-users__user">
+      <th scope="row">
+        <div class="avatar ">
+          <img src="../assets/img/user.png" class="avatar__image" />
+        </div>
+      </th>
+      <td class="text-default table-default__answer">Larry</td>
+      <td class="text-default table-default__answer">Desenvolvedor Front-end</td>
+      <td class="text-default table-default__answer">11/10/201</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock %}

@@ -1,8 +1,12 @@
 .avatar {
   overflow: hidden;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
+  @include media-breakpoint-up(lg) {
+    width: 60px;
+    height: 60px;
+  }
   &--small {
     width: 30px;
     height: 30px;

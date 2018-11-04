@@ -1,0 +1,31 @@
+.table-default {
+  &__answer {
+    position: relative;
+    &:last-of-type::after {
+      top: 50%;
+      opacity: 0;
+      content: "";
+      width: 30px;
+      right: 25px;
+      height: 30px;
+      position: absolute;
+      display: inline-block;
+      transform: translateY(-50%);
+      background: url(../img/icons/eye.svg) no-repeat;
+    }
+  }
+}
+
+.table-users {
+  &__user {
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+
+    &:hover .table-default__answer:last-of-type::after {
+      opacity: 1;
+    }
+  }
+}
