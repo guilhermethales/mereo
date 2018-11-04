@@ -4,12 +4,12 @@
     trigerMenu: $('.menu-burguer'),
     sidebar: $('.sidebar'),
     iconBack: $('.icon-back'),
-    backdrop: $('.main-backdrop')
+    backdrop: $('.main-backdrop'),
+    tableRow: $('.table-row')
   };
 
   App.init = function() {
     this.bindUiEvents();
-    this.runInitialMethods();
   };
 
   App.isDesktop = function () {
@@ -44,6 +44,10 @@
 
     this.iconBack.click(() => {
       this.hideSidebar();
+    });
+
+    this.tableRow.click(() => {
+      window.document.location = $(this.tableRow).data('href');
     });
   };
 
