@@ -1,0 +1,55 @@
+.logo {
+  max-width: 100px;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 140px;
+  }
+}
+
+.menu-burguer {
+  width: 30px;
+  cursor: pointer;
+}
+
+.icon-back {
+  width: 25px;
+  display: none;
+}
+
+.list-default {
+  padding: 0;
+  list-style: none;
+}
+
+.link-default {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.main-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 995;
+  height: 100%;
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, .6);
+
+  &.active {
+    display: block;
+  }
+}
+
+.main-content {
+  background-color: #f2f7fb;
+  transition: .3s ease-in-out margin-left;
+  padding: 15px;
+  min-height: 100vh;
+  margin-top: 50px;
+  @include media-breakpoint-up(lg) {
+    margin-left: 270px;
+  }
+}

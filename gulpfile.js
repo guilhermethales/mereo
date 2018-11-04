@@ -40,7 +40,7 @@ gulp.task('scripts', () =>
     .pipe(eslint.format())
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(babel({presets: ['env']}))
+    .pipe(babel({presets: ['@babel/env']}))
     .pipe(gulp.dest('build/assets/js'))
     .pipe(browserSync.reload({stream: true }))
 );

@@ -4,10 +4,17 @@
 // SETTINGS
 @import "settings/variables";
 
+// SETTINGS
+@import "tools/mixins";
+
 // GENERIC
 @import "generic/utilities";
 @import "generic/generic";
 
+// OBJECTS
+@import "objects/objects";
+
 // COMPONENTS
 @import "components/header";
 @import "components/avatar";
+@import "components/sidebar";

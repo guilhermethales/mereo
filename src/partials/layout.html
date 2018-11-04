@@ -14,8 +14,13 @@
 <body>
 
 	{% include "./header.html" %}
+	{% include "./sidebar-menu.html" %}
 
-	{% block content %}{% endblock %}
+  <main class="main-content">
+	  {% block content %}{% endblock %}
+  </main>
+
+  <div class="main-backdrop"></div>
 
 	{% include "./scripts.html" %}
 

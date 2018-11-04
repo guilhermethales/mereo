@@ -1,0 +1,56 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  background-color: $black-medium;
+  transform: translateX(-100%);
+  transition: .3s ease-in-out transform;
+
+  @include media-breakpoint-up(lg) {
+    transform: translateX(0);
+    width: 270px;
+  }
+
+  &.active {
+    transform: translate(0);
+
+    .icon-back {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    min-height: 50px;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__content {
+    &__menu {
+      &__item__link {
+        color: $white;
+        display: block;
+        padding: 10px 15px;
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+
+        &:hover {
+          color: $white;
+          background-color: #1f272a;
+        }
+      }
+
+      &__item__icon {
+        width: 20px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
