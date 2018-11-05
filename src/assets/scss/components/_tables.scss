@@ -6,17 +6,19 @@
   }
   &__answer {
     position: relative;
-    &:last-of-type::after {
-      top: 50%;
-      opacity: 0;
-      content: "";
-      width: 30px;
-      right: 25px;
-      height: 30px;
-      position: absolute;
-      display: inline-block;
-      transform: translateY(-50%);
-      background: url(../img/icons/eye.svg) no-repeat;
+    @include media-breakpoint-up(lg) {
+      &:last-of-type::after {
+        top: 50%;
+        opacity: 0;
+        content: "";
+        width: 30px;
+        right: 25px;
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+        transform: translateY(-50%);
+        background: url(../img/icons/eye.svg) no-repeat;
+      }
     }
   }
 }

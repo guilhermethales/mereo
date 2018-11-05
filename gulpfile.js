@@ -66,7 +66,7 @@ gulp.task('usemin', ['sass'], function () {
       css: [minifycss],
       js: [uglify],
     }))
-    .pipe(gulp.dest('dist/pages'));
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('server', () => {
@@ -78,7 +78,7 @@ gulp.task('server', () => {
 });
 
 gulp.task('build', ['clean'], function () {
-  gulp.start('nunjucks', 'usemin', 'imagesDeploy', 'fontsDeploy');
+  gulp.start('nunjucks', 'usemin');
 });
 
 gulp.task('default', ['sass', 'nunjucks', 'scripts', 'images'], function () {

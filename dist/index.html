@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.min.css"/>
+</head>
+
+<body>
+
+	<header class="header">
+  <img class="menu-burguer d-lg-none" src="../assets/img/icons/menu-button.svg" alt="">
+
+  <div class="header__user">
+    <div class="avatar avatar--small">
+      <img src="../assets/img/user.png" class="avatar__image" />
+    </div>
+    <span class="header__user__text">Guilherme Thales</span>
+  </div>
+</header>
+
+	<aside class="sidebar">
+  <div class="sidebar__header">
+    <img class="logo" src="../assets/img/icons/logomarca-mereo.svg" alt="">
+    <img class="icon-back" src="../assets/img/icons/icon-back.svg" alt="">
+  </div>
+
+  <nav class="sidebar__content">
+    <ul class="sidebar__content__menu list-default">
+       <li class="sidebar__content__menu__item">
+        <a class="sidebar__content__menu__item__link link-default" href="index.html">
+        <img class="sidebar__content__menu__item__icon" src="../assets/img/icons/icon-user.svg" alt="">
+        Pessoas</a>
+       </li>
+    </ul>
+  </nav>
+</aside>
+
+
+  <main class="main-content">
+	  
+  <h1 class="page-title">Colaboradores</h1>
+  <div class="group-action">
+    <div class="row mx-0">
+      <div class="col-4 px-0">
+        <div class="search-item mb-3">
+          <input type="text" class="form-control search-item__input" placeholder="Pesquise pelo nome do colaborador">
+        </div>
+      </div>
+    </div>
+  </div>
+  <table class="table table-default table-users">
+  <thead>
+    <tr>
+      <th class="text-default" scope="col">Usuários</th>
+      <th class="text-default" scope="col">Nome</th>
+      <th class="text-default" scope="col">Cargo</th>
+      <th class="text-default" scope="col">Data de Cadastro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-users__user table-row" data-href="user-detail.html">
+        <th scope="row">
+          <div class="avatar ">
+            <img src="../assets/img/user.png" class="avatar__image" />
+          </div>
+        </th>
+        <td class="text-default table-default__answer">Mark </td>
+        <td class="text-default table-default__answer">Gerente de TI</td>
+        <td class="text-default table-default__answer">11/10/2018</td>
+    </tr>
+    <tr class="table-users__user table-row" data-href="user-detail.html">
+      <th scope="row">
+        <div class="avatar ">
+          <img src="../assets/img/user.png" class="avatar__image" />
+        </div>
+      </th>
+      <td class="text-default table-default__answer">Jacob</td>
+      <td class="text-default table-default__answer">Desenvolvedor Back-end</td>
+      <td class="text-default table-default__answer">11/10/201</td>
+    </tr>
+    <tr class="table-users__user table-row" data-href="user-detail.html">
+      <th scope="row">
+        <div class="avatar ">
+          <img src="../assets/img/user.png" class="avatar__image" />
+        </div>
+      </th>
+      <td class="text-default table-default__answer">Larry</td>
+      <td class="text-default table-default__answer">Desenvolvedor Front-end</td>
+      <td class="text-default table-default__answer">11/10/201</td>
+    </tr>
+  </tbody>
+</table>
+
+  </main>
+
+  <div class="main-backdrop"></div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="assets/js/main.min.js"></script>
+
+
+</body>
+
+</html>
