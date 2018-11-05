@@ -4,7 +4,7 @@
 {% block content %}
   <div class="content-default">
     <div class="row">
-      <div class="col-12 col-lg-8">
+      <div class="col-12">
         <section class="user-detail mb-3">
           <div class="card user-detail__card">
             <div class="user-detail__card__header">
@@ -12,20 +12,53 @@
                 <img src="../assets/img/user.png" class="avatar__image" />
               </div>
             </div>
-            <div class="card-body">
-              <div class="user-detail__infos">
-                <h1 class="user-detail__infos__name">Guilherme Thales Virgílio Simões</h1>
-                <p class="user-detail__infos__occupation">Desenvolvedor Front-end</p>
-                <p class="user-detail__infos__companyTime">Tempo de Empresa: 2 anos</p>
-                <p>
-                <img class="user-detail__infos__icon" src="assets/img/icons/icon-mail.svg" alt="">
-                guilhermethales97@gmail.com</p>
-                <p>
-                <img class="user-detail__infos__icon" src="assets/img/icons/icon-phone.svg" alt="">
-                (31) 99425-8494</p>
-                <a class="user-detail__infos__link link-default" target="_blank" href="https://www.linkedin.com/in/guilherme-thales-virg%C3%ADllio-7ba642130/">
-                <img class="user-detail__infos__icon" src="assets/img/icons/icon-linkedin.svg" alt="">
-                https://www.linkedin.com/in/guilherme-thales-virg%C3%ADllio-7ba642130/</a>
+            <div class="card-body pos-relative">
+              <div class="btn btn-success btn-action user-detail__action">Ativo</div>
+              <div class="row mx-0">
+                <div class="col-12 col-lg-6">
+                  <div class="user-detail__infos mb-4 mb-lg-0">
+                    <h1 class="user-detail__infos__name">Guilherme Thales Virgílio Simões</h1>
+                    <p class="user-detail__infos__occupation">Desenvolvedor Front-end</p>
+                    <p class="user-detail__infos__companyTime">Tempo de Empresa: 2 anos</p>
+                    <p>
+                    <img class="user-detail__infos__icon" src="assets/img/icons/icon-mail.svg" alt="">
+                    guilhermethales97@gmail.com</p>
+                    <p>
+                    <img class="user-detail__infos__icon" src="assets/img/icons/icon-phone.svg" alt="">
+                    (31) 99425-8494</p>
+                    <a class="user-detail__infos__link link-default" target="_blank" href="https://www.linkedin.com/in/guilherme-thales-virg%C3%ADllio-7ba642130/">
+                    <img class="user-detail__infos__icon" src="assets/img/icons/icon-linkedin.svg" alt="">
+                    https://www.linkedin.com/in/guilherme-thales-virg%C3%ADllio-7ba642130/</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="user-detail__infosbasic">
+                    <div class="user-detail__infosbasic__item">
+                      <p class="user-detail__infosbasic__item__question">Estado Civil</p>
+                      <p class="user-detail__infosbasic__item__answer">Solteiro</p>
+                    </div>
+                    <div class="user-detail__infosbasic__item">
+                      <p class="user-detail__infosbasic__item__question">Data de Nascimento</p>
+                      <p class="user-detail__infosbasic__item__answer">21/03/1997</p>
+                    </div>
+                    <div class="user-detail__infosbasic__item">
+                      <p class="user-detail__infosbasic__item__question">Sexo</p>
+                      <p class="user-detail__infosbasic__item__answer">Masculino</p>
+                    </div>
+                    <div class="user-detail__infosbasic__item">
+                      <p class="user-detail__infosbasic__item__question">Escolaridade</p>
+                      <p class="user-detail__infosbasic__item__answer">Médio Completo</p>
+                    </div>
+                    <div class="user-detail__infosbasic__item">
+                      <p class="user-detail__infosbasic__item__question">Naturalidade</p>
+                      <p class="user-detail__infosbasic__item__answer">Belo Horizonte</p>
+                    </div>
+                    <div class="user-detail__infosbasic__item">
+                      <p class="user-detail__infosbasic__item__question">Nacionalidade</p>
+                      <p class="user-detail__infosbasic__item__answer">Brasileiro</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -36,8 +69,8 @@
             <div class="card-body">
               <h2 class="card__title">Experiência Profissional</h2>
               <div class="card-default__item">
-                <div class="card-default__company">
-                  <img class="card-default__company__image" src="assets/img/company1.png" alt="">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/company1.png" alt="">
                 </div>
                 <div class="card-default__texts">
                   <h3 class="card-default__title">Alpes One Tecnologia</h3>
@@ -45,8 +78,8 @@
                 </div>
               </div>
               <div class="card-default__item">
-                <div class="card-default__company">
-                  <img class="card-default__company__image" src="assets/img/company3.jpg" alt="">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/company3.jpg" alt="">
                 </div>
                 <div class="card-default__texts">
                   <h3 class="card-default__title">Overside Tecnologia</h3>
@@ -54,8 +87,8 @@
                 </div>
               </div>
               <div class="card-default__item">
-                <div class="card-default__company">
-                  <img class="card-default__company__image" src="assets/img/company2.png" alt="">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/company2.png" alt="">
                 </div>
                 <div class="card-default__texts">
                   <h3 class="card-default__title">HC-COOP</h3>
@@ -66,13 +99,42 @@
           </div>
         </section>
 
-        <section class="certifications">
+        <section class="academic-training mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card__title">Formação Acadêmica</h2>
+              <div class="card-default__item">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/logo-una.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Centro Universitário UNA</h3>
+                  <p class="card-default__subtitle">Sistemas de Informação</p>
+                  <p class="user-detail__infos__companyTime mb-0">fev de 2016 - dez de 2019</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/logo-cotemig.png" alt="">
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Colégio e Faculdade COTEMIG</h3>
+                  <p class="card-default__subtitle">Técnico em Informática</p>
+                  <p class="user-detail__infos__companyTime mb-0">fev de 2012 - dez de 2014</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="certifications mb-3">
           <div class="card">
             <div class="card-body">
               <h2 class="card__title">Certificados</h2>
               <div class="card-default__item">
-                <div class="card-default__company">
-                  <img class="card-default__company__image" src="assets/img/logo-company-certification.png" alt="">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/logo-company-certification.png" alt="">
+                  <span class="card-default__left__text">Udemy</span>
                 </div>
                 <div class="card-default__texts">
                   <h3 class="card-default__title">JS com TDD na Prática</h3>
@@ -80,8 +142,9 @@
                 </div>
               </div>
               <div class="card-default__item">
-                <div class="card-default__company">
-                  <img class="card-default__company__image" src="assets/img/logo-company-certification.png" alt="">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/logo-company-certification.png" alt="">
+                  <span class="card-default__left__text">Udemy</span>
                 </div>
                 <div class="card-default__texts">
                   <h3 class="card-default__title">Javascript completo 2018. Do iniciante ao mestre</h3>
@@ -89,8 +152,9 @@
                 </div>
               </div>
               <div class="card-default__item">
-                <div class="card-default__company">
-                  <img class="card-default__company__image" src="assets/img/logo-alura.png" alt="">
+                <div class="card-default__left">
+                  <img class="card-default__left__image" src="assets/img/logo-alura.png" alt="">
+                   <span class="card-default__left__text">Alura</span>
                 </div>
                 <div class="card-default__texts">
                   <h3 class="card-default__title">Flexbox: Posicione elementos na tela</h3>
@@ -100,6 +164,104 @@
             </div>
           </div>
         </section>
+
+        <section class="salary-history">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card__title">Histórico Salarial</h2>
+              <div class="card-default__item">
+                <div class="card-default__left time-line">
+                  <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#2aad18"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Desenvolvedor Front-end <span class="card-default__title--small">(Alpes One Tecnologia)</span></h3>
+                  <p class="mb-0">R$ 1.435,00</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__left time-line">
+                  <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#ccc"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Estagiário Front-end <span class="card-default__title--small">(Alpes One Tecnologia)</span></h3>
+                  <p class="mb-0">R$ 950,00</p>
+                </div>
+              </div>
+              <div class="card-default__item">
+                <div class="card-default__left time-line">
+                  <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#ccc"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+                </div>
+                <div class="card-default__texts">
+                  <h3 class="card-default__title">Analista de Suporte <span class="card-default__title--small">(Overside Tecnologia)</span></h3>
+                  <p class="mb-0">R$ 1.435,00</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-black" data-toggle="modal" data-target=".bd-example-modal-lg">Ver histórico completo</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content salary-history">
+        <div class="card">
+          <div class="card-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            <h2 class="card__title">Histórico Salarial</h2>
+            <div class="card-default__item">
+              <div class="card-default__left time-line">
+                <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#2aad18"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+              </div>
+              <div class="card-default__texts">
+                <h3 class="card-default__title">Desenvolvedor Front-end <span class="card-default__title--small">(Alpes One Tecnologia)</span></h3>
+                <p class="mb-0">R$ 1.435,00</p>
+              </div>
+            </div>
+            <div class="card-default__item">
+              <div class="card-default__left time-line">
+                <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#ccc"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+              </div>
+              <div class="card-default__texts">
+                <h3 class="card-default__title">Estagiário Front-end <span class="card-default__title--small">(Alpes One Tecnologia)</span></h3>
+                <p class="mb-0">R$ 950,00</p>
+              </div>
+            </div>
+            <div class="card-default__item">
+              <div class="card-default__left time-line">
+                <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#ccc"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+              </div>
+              <div class="card-default__texts">
+                <h3 class="card-default__title">Analista de Suporte <span class="card-default__title--small">(Overside Tecnologia)</span></h3>
+                <p class="mb-0">R$ 1.435,00</p>
+              </div>
+            </div>
+            <div class="card-default__item">
+              <div class="card-default__left time-line">
+                <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#ccc"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+              </div>
+              <div class="card-default__texts">
+                <h3 class="card-default__title">Analista de Suporte <span class="card-default__title--small">(Overside Tecnologia)</span></h3>
+                <p class="mb-0">R$ 1.435,00</p>
+              </div>
+            </div>
+            <div class="card-default__item">
+              <div class="card-default__left time-line">
+                <svg class="salary-history__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755"><g fill="#ccc"><path d="M106.377 0C47.721 0 0 47.721 0 106.377s47.721 106.377 106.377 106.377 106.377-47.721 106.377-106.377S165.034 0 106.377 0zm0 198.755C55.44 198.755 14 157.314 14 106.377S55.44 14 106.377 14s92.377 41.44 92.377 92.377-41.44 92.378-92.377 92.378z"/><path d="M113.377 100.096V60.352a20.136 20.136 0 0 1 9.82 7.82 7 7 0 0 0 11.692-7.699 34.073 34.073 0 0 0-21.512-14.647v-11.12a7 7 0 1 0-14 0v11.099c-15.493 3.23-27.168 16.989-27.168 33.426s11.676 30.198 27.168 33.428v39.744a20.136 20.136 0 0 1-9.82-7.82 7 7 0 1 0-11.692 7.699 34.073 34.073 0 0 0 21.512 14.647v11.119a7 7 0 1 0 14 0V166.95c15.493-3.23 27.168-16.989 27.168-33.426s-11.675-30.198-27.168-33.428zM86.209 79.231c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168 73.166v-37.748c7.674 2.847 13.168 10.221 13.168 18.874s-5.493 16.027-13.168 18.874z"/></g></svg>
+              </div>
+              <div class="card-default__texts">
+                <h3 class="card-default__title">Analista de Suporte <span class="card-default__title--small">(Overside Tecnologia)</span></h3>
+                <p class="mb-0">R$ 1.435,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

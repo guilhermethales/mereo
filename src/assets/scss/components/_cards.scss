@@ -1,4 +1,14 @@
 .user-detail {
+  &__action {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    @include media-breakpoint-up(sm) {
+      top: 15px;
+      right: 15px;
+    }
+  }
+
   &__card {
     display: block;
 
@@ -13,6 +23,7 @@
   }
 
   &__infos {
+    position: relative;
     &__title {
       @extend .font-bold;
     }
@@ -26,7 +37,7 @@
 
     &__occupation {
       font-size: 16px;
-      color: #787676;
+      color: $gray-medium;
       margin-bottom: 10px;
       @include media-breakpoint-up(lg) {
         font-size: 20px;
@@ -39,8 +50,46 @@
     }
   }
 
+  &__infosbasic {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      flex: 1 0 50%;
+
+      @media(min-width: 660px) {
+        flex-basis: 33.333%;
+      }
+
+      @media(min-width: 992px) and (max-width: 1280px) {
+        flex-basis: 50%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 40px;
+      }
+      &__question {
+        font-size: 14px;
+        margin-bottom: 0;
+        @extend .font-bold;
+        text-transform: uppercase;
+      }
+
+      &__answer {
+        font-size: 14px;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
   .card-body {
     padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     @include media-breakpoint-up(lg) {
       padding-top: 80px;
@@ -75,6 +124,7 @@
   position: relative;
   &__item {
     display: flex;
+    align-items: center;
     padding: 30px 0;
     &:not(:last-of-type) {
       border-bottom: 1px solid #e3e3e3;
@@ -83,9 +133,16 @@
       padding-top: 10px;
     }
   }
-  &__company {
+  &__left {
+    position: relative;
     &__image {
       max-width: 50px;
+    }
+    &__text {
+      display: block;
+      font-size: 14px;
+      text-align: center;
+      color: $gray-medium;
     }
   }
 
@@ -103,5 +160,15 @@
     @include media-breakpoint-up(lg) {
       font-size: 20px;
     }
+
+    &--small {
+      font-size: 12px;
+      display: inline-block;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 0;
+    font-size: 18px;
   }
 }

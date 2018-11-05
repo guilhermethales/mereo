@@ -68,3 +68,52 @@
     border-width: 1px;
   }
 }
+
+
+.card-default__item:not(:last-of-type) {
+  .time-line {
+    &:not(:last-of-type)::after {
+      bottom: -110%;
+      left: 50%;
+      width: 1px;
+      content: "";
+      height: 100%;
+      display: block;
+      position: absolute;
+      background-color: #ccc;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.search-item {
+  &__input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+
+.page-title {
+  font-size: 20px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
+}
+
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-action {
+  cursor: default !important;
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
