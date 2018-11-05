@@ -55,6 +55,11 @@ gulp.task('images', function () {
     .pipe(gulp.dest('build/assets/img'));
 });
 
+gulp.task('imagesBuild', function () {
+  return gulp.src('build/assets/img/**/*')
+    .pipe(gulp.dest('dist/assets/img'));
+});
+
 gulp.task('clean', function () {
   return gulp.src('dist')
     .pipe(clean());
@@ -78,7 +83,7 @@ gulp.task('server', () => {
 });
 
 gulp.task('build', ['clean'], function () {
-  gulp.start('nunjucks', 'usemin');
+  gulp.start('nunjucks', 'usemin', 'imagesBuild');
 });
 
 gulp.task('default', ['sass', 'nunjucks', 'scripts', 'images'], function () {
