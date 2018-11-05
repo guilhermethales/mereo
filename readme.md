@@ -11,7 +11,7 @@ Antes de tudo, é necessário instalar as dependências para rodar o projeto:
 # Clone o repositório
 
 ```
-$ git clone git@github.com:guilhermethales/mereo.git
+$ git clone https://github.com/guilhermethales/mereo.git
 $ cd mereo
 
 #Instalar dependências
